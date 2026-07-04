@@ -1,6 +1,6 @@
-# wp-sqlite
+# wp-sqlite-xdebug
 
-THe ultimate WP environment for plugin and theme development including
+THe ultimate WP environment for plugin and theme development including with the low resource impact of sqlite.
 
 - XDEBUG step debugging and profiling.
 - Easy access to `wp-content` folder
