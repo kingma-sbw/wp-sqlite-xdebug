@@ -4,7 +4,7 @@ THe ultimate WP environment for plugin and theme development including with the 
 
 - XDEBUG step debugging and profiling.
 - Easy access to `wp-content` folder
-- Predefined `launch.json` and `xdebug.ini` files for Visual Studio Code debuging.
+- Predefined `launch.json` and `xdebug.ini` files for Visual Studio Code debugging.
 
 ## Wordpress (current version & php 8.4)
 
