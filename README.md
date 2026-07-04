@@ -1,12 +1,22 @@
 # wp-sqlite
 
-## Wordpress (current version  & php 8.4)
+THe ultimate WP environment for plugin and theme development including
 
-Creates the followin 
+- XDEBUG step debugging and profiling.
+- Easy access to `wp-content` folder
+- Predefined `launch.json` and `xdebug.ini` files for Visual Studio Code debuging.
+
+## Wordpress (current version & php 8.4)
+
+Creates the following
 
 * `/logs`
 * `/wp-content`
 
-Links the `xdebug.ini` file
+And links the `xdebug.ini` file.
 
+## Install
 For wordpress stubs run `composer update` to create the `/vendor`
+Install [XDEBUG extension](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug)
+
+After editing the `xdebug.ini` make sure to restart the container.
