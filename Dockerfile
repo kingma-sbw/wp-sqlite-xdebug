@@ -6,11 +6,12 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ENV WORDPRESS_PREPARE_DIR=/usr/src/wordpress
 
 USER root
-
-#RUN usermod -u 1000 www-data && \
-#    groupmod -g 1000 www-data
-
-# xdebug: https://xdebug.org/docs/install
+ARG UPLOADS_INI="/usr/local/etc/php/conf.d/uploads.ini"
+RUN set -eux; \
+    echo "file_uploads = On" > "$UPLOADS_INI"; \
+    echo "upload_max_filesize = 100M" >> "$UPLOADS_INI"; \
+    echo "post_max_size = 100M" >> "$UPLOADS_INI"; \
+    echo "memory_limit = 256M" >> "$UPLOADS_INI"
 ARG XDEBUG_VERSION=3.4.5
 RUN pecl install xdebug-${XDEBUG_VERSION} && \
     docker-php-ext-enable xdebug
