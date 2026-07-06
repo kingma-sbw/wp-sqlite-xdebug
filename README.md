@@ -1,5 +1,7 @@
 # wp-sqlite-xdebug
 
+ARCHIVED look at : https://github.com/kingma-sbw/docker-sqlite-wordpress
+
 THe ultimate WP environment for plugin and theme development including with the low resource impact of sqlite.
 
 - XDEBUG step debugging and profiling.
